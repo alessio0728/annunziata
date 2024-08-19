@@ -15,7 +15,7 @@
 	z-index: 1;
 	width: 100%;
 	height: 100vh;
-	
+
 }
 
 
@@ -134,10 +134,147 @@ img {
 	padding-right: 10px;
 }
 
+
+
+.grid {
+	display: flex;
+	overflow-x: scroll;
+	padding: 0 10%;
+	flex-wrap: nowrap;
+	position: relative;
+	padding: 0 10%;
+	animation: scroll 90s linear infinite; /* Applica l'animazione */
+	width: 100%;
+	
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+
+.col-33 {
+
+	flex: 0 0 auto;
+
+	width: 33.33%;
+	padding: 40px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background: linear-gradient(220.55deg, rgba(255, 173, 247, 0.5) 0%, rgba(177, 255, 150, 0.5) 100%);
+	height: 60vh;
+	margin-top: 50px;
+	position: relative;
+	overflow-y: scroll;
+	max-height: 600px;
+	display: inline-block;
+	vertical-align: top;
+	transition: 0.3 ease;
+
+	
+	
+}
+.col-33:hover {
+    background-color: #FF69B4; 
+}
+
+.avatar {
+
+	border: 1px solid black;
+	border-radius: 100px;
+	background-color: blue;
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	z-index: 6;
+	margin-left: 25%;
+	vertical-align: top;
+	margin-top: -40px;
+	position: relative;
+
+
+
+}
+
+
+.col-100 {
+	width: 100%;
+	padding: 10% 20px;
+}
+
+@media (max-width: 768px) {
+
+	.col-25,
+	.col-50,
+	.col-40,
+	.col-60,
+	.col-33,
+	.col-100 {
+		width: 100%;
+	}
+
+
+	.reverse {
+		flex-direction: column-reverse;
+	}
+
+}
+
+/*
+.hero_card{
+	border: 1px solid red;
+	width: 100%;
+	height: 50vh;
+	position: relative;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+
+
+
+.conteiner_card{
+
+	display: flex;
+	flex-wrap: nowrap;
+	margin-left: 10px;
+	position: absolute;
+	bottom: 50%;
+	border: 1px solid black;
+	overflow-x: scroll;
+	white-space: nowrap;
+	width: 100%;
+	max-width: 100%;
+	padding: 0 50px;
+	height: 100%;
+
+}
+
+.conteiner_card .ml {
+    display: inline-block;
+    flex: 0 0 auto;
+	margin-right: 10px;
+	width: 200px;
+	height: 600px;
+	background-color: #FF4191;
+	position: absolute;
+	
+}
+
+.conteiner_card h1:last-child {
+    margin-right: -20px;
+}
+	*/
+
 .finish {
 	display: flex;
 	width: 100%;
-	height: 65vh;
+	height: 70vh;
 	background-color: black;
 	z-index: 4;
 	margin-top: 10%;
@@ -153,6 +290,19 @@ img {
 .mt {
 	margin-top: 50px;
 	padding: 10px;
+}
+
+.mt_title{
+
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	 color: blue;
+}
+
+.ml {
+	margin-left: 20px;
 }
 
 .cdn {
@@ -191,10 +341,10 @@ img {
 	display: columns;
 }
 
-.total{
+.total {
 
 	border: 1px solid black;
-	 border-radius: 100px;
+	border-radius: 100px;
 }
 
 .big-text {
