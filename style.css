@@ -14,7 +14,7 @@
 
 	.video-bg{ display: none;}
 
-	body{background: linear-gradient(220.55deg, #8FFF85 0%, #39A0FF 100%);}
+	body{background-image: url(album/sfondo\ samsung\ 1.jpg);}
 
 	.mt_title{display: flex; justify-content: center; align-items: center; color: blue;}
 
@@ -30,10 +30,15 @@
             margin-bottom: 10px; /* Aggiunge un margine inferiore agli item */
         }
 
+		.finish {flex-direction: column; }
 
+		.orderC {margin-top: 30px;}
 
-	
+		.bancomat {margin-top: -140px; /* Sposta .bancomat verso l'alto */}
 
+		.orderD {display: inline-flex; border-top: 2px solid white;}
+
+				
 }
 
 .section {
@@ -111,6 +116,14 @@ img {
 	left: 0;
 	object-fit: contain;
 	margin-top: 100px;
+}
+
+.bancomat {
+
+	display: inline-flex;
+	 margin-right: 10%;
+	  margin-left: 5%;
+	  margin-bottom: 10px;
 }
 
 .pagamenti {
@@ -254,51 +267,6 @@ img {
 
 }
 
-/*
-.hero_card{
-	border: 1px solid red;
-	width: 100%;
-	height: 50vh;
-	position: relative;
-	margin-top: 30px;
-	overflow: hidden;
-}
-
-
-
-
-.conteiner_card{
-
-	display: flex;
-	flex-wrap: nowrap;
-	margin-left: 10px;
-	position: absolute;
-	bottom: 50%;
-	border: 1px solid black;
-	overflow-x: scroll;
-	white-space: nowrap;
-	width: 100%;
-	max-width: 100%;
-	padding: 0 50px;
-	height: 100%;
-
-}
-
-.conteiner_card .ml {
-    display: inline-block;
-    flex: 0 0 auto;
-	margin-right: 10px;
-	width: 200px;
-	height: 600px;
-	background-color: #FF4191;
-	position: absolute;
-	
-}
-
-.conteiner_card h1:last-child {
-    margin-right: -20px;
-}
-	*/
 
 .finish {
 	display: flex;
@@ -370,6 +338,11 @@ img {
 	display: columns;
 }
 
+.orderD {
+
+	display: columns;
+}
+
 .total {
 
 	border: 1px solid black;
@@ -398,11 +371,6 @@ img {
 	font-size: 20px;
 }
 
-/*
-@media (max-width: 768px) {
-	.normal-text{ text-sm-end}
-	
-}*/
 
 .animate__fadeInTopLeft {
 
@@ -418,48 +386,6 @@ img {
 
 	--animate-duration: 6s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*SEZIONE PRIMA
-
-.hero {
-
-	height: 600px;
-	display: flex;
-	width: 100%;
-	align-items: center;
-	background: url(album/video-back.mp4);
-	background-size: cover;
-	height: 100vh;
-}
-
-.hero__content {
-
-	max-width: 1350px;
-	margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-	.hero {
-		background-image: url(album/Bari\ 800px.jpeg);
-		height: 100vh;
-		background-size: cover;
-		background-repeat: no-repeat;
-
-	}
-}
-
-*/
 
 
 /*serve per evitare che gli elementi si sovrapongono*/
